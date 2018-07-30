@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46C7E7320B77C292D5F504BD /* Pods_InTimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDDCDEF2EF963F911072A20 /* Pods_InTimeTests.framework */; };
+		5CF76200210EB40800993D61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF761FF210EB40800993D61 /* AppDelegate.swift */; };
+		5CF76202210EB40800993D61 /* InTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76201210EB40800993D61 /* InTimeViewController.swift */; };
+		5CF76205210EB40800993D61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF76203210EB40800993D61 /* Main.storyboard */; };
+		5CF76207210EB40900993D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF76206210EB40900993D61 /* Assets.xcassets */; };
+		5CF7620A210EB40900993D61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF76208210EB40900993D61 /* LaunchScreen.storyboard */; };
+		5CF76215210EB40900993D61 /* InTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76214210EB40900993D61 /* InTimeTests.swift */; };
+		5CF76220210EB40900993D61 /* InTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF7621F210EB40900993D61 /* InTimeUITests.swift */; };
+		5CF7625B210EBFD500993D61 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF76259210EBFD500993D61 /* Interface.storyboard */; };
+		5CF7625D210EBFD600993D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF7625C210EBFD600993D61 /* Assets.xcassets */; };
+		5CF76264210EBFD600993D61 /* InTimeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CF76263210EBFD600993D61 /* InTimeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CF76269210EBFD600993D61 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76268210EBFD600993D61 /* InterfaceController.swift */; };
+		5CF7626B210EBFD600993D61 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF7626A210EBFD600993D61 /* ExtensionDelegate.swift */; };
+		5CF7626D210EBFD600993D61 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF7626C210EBFD600993D61 /* NotificationController.swift */; };
+		5CF7626F210EBFD700993D61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF7626E210EBFD700993D61 /* Assets.xcassets */; };
+		5CF76274210EBFD700993D61 /* InTimeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5CF76257210EBFD500993D61 /* InTimeWatch.app */; };
+		D9D0730C50F04192FCD93C34 /* Pods_InTimeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD49C87ADDEC3CACF609A5B /* Pods_InTimeUITests.framework */; };
+		EF0DCC3AEF4758220B650413 /* Pods_InTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6297B66E77BC84CF352F7845 /* Pods_InTime.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CF76211210EB40900993D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF761F4210EB40800993D61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF761FB210EB40800993D61;
+			remoteInfo = InTime;
+		};
+		5CF7621C210EB40900993D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF761F4210EB40800993D61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF761FB210EB40800993D61;
+			remoteInfo = InTime;
+		};
+		5CF76265210EBFD600993D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF761F4210EB40800993D61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF76262210EBFD600993D61;
+			remoteInfo = "InTimeWatch Extension";
+		};
+		5CF76272210EBFD700993D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF761F4210EB40800993D61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF76256210EBFD500993D61;
+			remoteInfo = InTimeWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CF76254210EBF9A00993D61 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5CF76274210EBFD700993D61 /* InTimeWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76278210EBFD700993D61 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CF76264210EBFD600993D61 /* InTimeWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17625B83E2CC506D85AE522E /* Pods-InTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-InTime/Pods-InTime.release.xcconfig"; sourceTree = "<group>"; };
+		2AD49C87ADDEC3CACF609A5B /* Pods_InTimeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTimeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D25AFF26AF352B201D13FB /* Pods-InTimeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTimeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InTimeUITests/Pods-InTimeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		31BFBC0AF19807B073D389C2 /* Pods-InTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InTime/Pods-InTime.debug.xcconfig"; sourceTree = "<group>"; };
+		5704B685DB7CADC695BE700D /* Pods-InTimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTimeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InTimeTests/Pods-InTimeTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CF761FC210EB40800993D61 /* InTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF761FF210EB40800993D61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CF76201210EB40800993D61 /* InTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTimeViewController.swift; sourceTree = "<group>"; };
+		5CF76204210EB40800993D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CF76206210EB40900993D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CF76209210EB40900993D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CF7620B210EB40900993D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF76210210EB40900993D61 /* InTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF76214210EB40900993D61 /* InTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTimeTests.swift; sourceTree = "<group>"; };
+		5CF76216210EB40900993D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF7621B210EB40900993D61 /* InTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF7621F210EB40900993D61 /* InTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTimeUITests.swift; sourceTree = "<group>"; };
+		5CF76221210EB40900993D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF76257210EBFD500993D61 /* InTimeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InTimeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF7625A210EBFD500993D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5CF7625C210EBFD600993D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CF7625E210EBFD600993D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF76263210EBFD600993D61 /* InTimeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InTimeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF76268210EBFD600993D61 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5CF7626A210EBFD600993D61 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5CF7626C210EBFD600993D61 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5CF7626E210EBFD700993D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CF76270210EBFD700993D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF76271210EBFD700993D61 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6297B66E77BC84CF352F7845 /* Pods_InTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B83B0A237DCEF9FB7555E1A /* Pods-InTimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTimeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InTimeTests/Pods-InTimeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93686DCD757E4B36CA6EC47D /* Pods-InTimeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InTimeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InTimeUITests/Pods-InTimeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BBDDCDEF2EF963F911072A20 /* Pods_InTimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InTimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CF761F9210EB40800993D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF0DCC3AEF4758220B650413 /* Pods_InTime.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF7620D210EB40900993D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C7E7320B77C292D5F504BD /* Pods_InTimeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76218210EB40900993D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9D0730C50F04192FCD93C34 /* Pods_InTimeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76260210EBFD600993D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CF761F3210EB40800993D61 = {
+			isa = PBXGroup;
+			children = (
+				5CF761FE210EB40800993D61 /* InTime */,
+				5CF76213210EB40900993D61 /* InTimeTests */,
+				5CF7621E210EB40900993D61 /* InTimeUITests */,
+				5CF76258210EBFD500993D61 /* InTimeWatch */,
+				5CF76267210EBFD600993D61 /* InTimeWatch Extension */,
+				5CF761FD210EB40800993D61 /* Products */,
+				C514C97BC4D6709FBB646EEE /* Pods */,
+				DBA0299437B359AC4B42FD4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CF761FD210EB40800993D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CF761FC210EB40800993D61 /* InTime.app */,
+				5CF76210210EB40900993D61 /* InTimeTests.xctest */,
+				5CF7621B210EB40900993D61 /* InTimeUITests.xctest */,
+				5CF76257210EBFD500993D61 /* InTimeWatch.app */,
+				5CF76263210EBFD600993D61 /* InTimeWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CF761FE210EB40800993D61 /* InTime */ = {
+			isa = PBXGroup;
+			children = (
+				5CF761FF210EB40800993D61 /* AppDelegate.swift */,
+				5CF76201210EB40800993D61 /* InTimeViewController.swift */,
+				5CF76203210EB40800993D61 /* Main.storyboard */,
+				5CF76206210EB40900993D61 /* Assets.xcassets */,
+				5CF76208210EB40900993D61 /* LaunchScreen.storyboard */,
+				5CF7620B210EB40900993D61 /* Info.plist */,
+			);
+			path = InTime;
+			sourceTree = "<group>";
+		};
+		5CF76213210EB40900993D61 /* InTimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CF76214210EB40900993D61 /* InTimeTests.swift */,
+				5CF76216210EB40900993D61 /* Info.plist */,
+			);
+			path = InTimeTests;
+			sourceTree = "<group>";
+		};
+		5CF7621E210EB40900993D61 /* InTimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CF7621F210EB40900993D61 /* InTimeUITests.swift */,
+				5CF76221210EB40900993D61 /* Info.plist */,
+			);
+			path = InTimeUITests;
+			sourceTree = "<group>";
+		};
+		5CF76258210EBFD500993D61 /* InTimeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				5CF76259210EBFD500993D61 /* Interface.storyboard */,
+				5CF7625C210EBFD600993D61 /* Assets.xcassets */,
+				5CF7625E210EBFD600993D61 /* Info.plist */,
+			);
+			path = InTimeWatch;
+			sourceTree = "<group>";
+		};
+		5CF76267210EBFD600993D61 /* InTimeWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5CF76268210EBFD600993D61 /* InterfaceController.swift */,
+				5CF7626A210EBFD600993D61 /* ExtensionDelegate.swift */,
+				5CF7626C210EBFD600993D61 /* NotificationController.swift */,
+				5CF7626E210EBFD700993D61 /* Assets.xcassets */,
+				5CF76270210EBFD700993D61 /* Info.plist */,
+				5CF76271210EBFD700993D61 /* PushNotificationPayload.apns */,
+			);
+			path = "InTimeWatch Extension";
+			sourceTree = "<group>";
+		};
+		C514C97BC4D6709FBB646EEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31BFBC0AF19807B073D389C2 /* Pods-InTime.debug.xcconfig */,
+				17625B83E2CC506D85AE522E /* Pods-InTime.release.xcconfig */,
+				8B83B0A237DCEF9FB7555E1A /* Pods-InTimeTests.debug.xcconfig */,
+				5704B685DB7CADC695BE700D /* Pods-InTimeTests.release.xcconfig */,
+				93686DCD757E4B36CA6EC47D /* Pods-InTimeUITests.debug.xcconfig */,
+				30D25AFF26AF352B201D13FB /* Pods-InTimeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DBA0299437B359AC4B42FD4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6297B66E77BC84CF352F7845 /* Pods_InTime.framework */,
+				BBDDCDEF2EF963F911072A20 /* Pods_InTimeTests.framework */,
+				2AD49C87ADDEC3CACF609A5B /* Pods_InTimeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CF761FB210EB40800993D61 /* InTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF76224210EB40900993D61 /* Build configuration list for PBXNativeTarget "InTime" */;
+			buildPhases = (
+				2A5CC525B3B99D24641A891C /* [CP] Check Pods Manifest.lock */,
+				5CF761F8210EB40800993D61 /* Sources */,
+				5CF761F9210EB40800993D61 /* Frameworks */,
+				5CF761FA210EB40800993D61 /* Resources */,
+				5CF76254210EBF9A00993D61 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CF76273210EBFD700993D61 /* PBXTargetDependency */,
+			);
+			name = InTime;
+			productName = InTime;
+			productReference = 5CF761FC210EB40800993D61 /* InTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CF7620F210EB40900993D61 /* InTimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF76227210EB40900993D61 /* Build configuration list for PBXNativeTarget "InTimeTests" */;
+			buildPhases = (
+				BE3154BE82BFE19562F1143D /* [CP] Check Pods Manifest.lock */,
+				5CF7620C210EB40900993D61 /* Sources */,
+				5CF7620D210EB40900993D61 /* Frameworks */,
+				5CF7620E210EB40900993D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CF76212210EB40900993D61 /* PBXTargetDependency */,
+			);
+			name = InTimeTests;
+			productName = InTimeTests;
+			productReference = 5CF76210210EB40900993D61 /* InTimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CF7621A210EB40900993D61 /* InTimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF7622A210EB40900993D61 /* Build configuration list for PBXNativeTarget "InTimeUITests" */;
+			buildPhases = (
+				045AE3F547C9ACE33F24D19C /* [CP] Check Pods Manifest.lock */,
+				5CF76217210EB40900993D61 /* Sources */,
+				5CF76218210EB40900993D61 /* Frameworks */,
+				5CF76219210EB40900993D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CF7621D210EB40900993D61 /* PBXTargetDependency */,
+			);
+			name = InTimeUITests;
+			productName = InTimeUITests;
+			productReference = 5CF7621B210EB40900993D61 /* InTimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5CF76256210EBFD500993D61 /* InTimeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF76279210EBFD700993D61 /* Build configuration list for PBXNativeTarget "InTimeWatch" */;
+			buildPhases = (
+				5CF76255210EBFD500993D61 /* Resources */,
+				5CF76278210EBFD700993D61 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CF76266210EBFD600993D61 /* PBXTargetDependency */,
+			);
+			name = InTimeWatch;
+			productName = InTimeWatch;
+			productReference = 5CF76257210EBFD500993D61 /* InTimeWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5CF76262210EBFD600993D61 /* InTimeWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF76275210EBFD700993D61 /* Build configuration list for PBXNativeTarget "InTimeWatch Extension" */;
+			buildPhases = (
+				5CF7625F210EBFD600993D61 /* Sources */,
+				5CF76260210EBFD600993D61 /* Frameworks */,
+				5CF76261210EBFD600993D61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InTimeWatch Extension";
+			productName = "InTimeWatch Extension";
+			productReference = 5CF76263210EBFD600993D61 /* InTimeWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CF761F4210EB40800993D61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Linger;
+				TargetAttributes = {
+					5CF761FB210EB40800993D61 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5CF7620F210EB40900993D61 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5CF761FB210EB40800993D61;
+					};
+					5CF7621A210EB40900993D61 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 5CF761FB210EB40800993D61;
+					};
+					5CF76256210EBFD500993D61 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5CF76262210EBFD600993D61 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5CF761F7210EB40800993D61 /* Build configuration list for PBXProject "InTime" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CF761F3210EB40800993D61;
+			productRefGroup = 5CF761FD210EB40800993D61 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CF761FB210EB40800993D61 /* InTime */,
+				5CF7620F210EB40900993D61 /* InTimeTests */,
+				5CF7621A210EB40900993D61 /* InTimeUITests */,
+				5CF76256210EBFD500993D61 /* InTimeWatch */,
+				5CF76262210EBFD600993D61 /* InTimeWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CF761FA210EB40800993D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF7620A210EB40900993D61 /* LaunchScreen.storyboard in Resources */,
+				5CF76207210EB40900993D61 /* Assets.xcassets in Resources */,
+				5CF76205210EB40800993D61 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF7620E210EB40900993D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76219210EB40900993D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76255210EBFD500993D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF7625D210EBFD600993D61 /* Assets.xcassets in Resources */,
+				5CF7625B210EBFD500993D61 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76261210EBFD600993D61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF7626F210EBFD700993D61 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045AE3F547C9ACE33F24D19C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTimeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A5CC525B3B99D24641A891C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE3154BE82BFE19562F1143D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InTimeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CF761F8210EB40800993D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF76202210EB40800993D61 /* InTimeViewController.swift in Sources */,
+				5CF76200210EB40800993D61 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF7620C210EB40900993D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF76215210EB40900993D61 /* InTimeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF76217210EB40900993D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF76220210EB40900993D61 /* InTimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CF7625F210EBFD600993D61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF7626D210EBFD600993D61 /* NotificationController.swift in Sources */,
+				5CF7626B210EBFD600993D61 /* ExtensionDelegate.swift in Sources */,
+				5CF76269210EBFD600993D61 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CF76212210EB40900993D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CF761FB210EB40800993D61 /* InTime */;
+			targetProxy = 5CF76211210EB40900993D61 /* PBXContainerItemProxy */;
+		};
+		5CF7621D210EB40900993D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CF761FB210EB40800993D61 /* InTime */;
+			targetProxy = 5CF7621C210EB40900993D61 /* PBXContainerItemProxy */;
+		};
+		5CF76266210EBFD600993D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CF76262210EBFD600993D61 /* InTimeWatch Extension */;
+			targetProxy = 5CF76265210EBFD600993D61 /* PBXContainerItemProxy */;
+		};
+		5CF76273210EBFD700993D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CF76256210EBFD500993D61 /* InTimeWatch */;
+			targetProxy = 5CF76272210EBFD700993D61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CF76203210EB40800993D61 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CF76204210EB40800993D61 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CF76208210EB40900993D61 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CF76209210EB40900993D61 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5CF76259210EBFD500993D61 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CF7625A210EBFD500993D61 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CF76222210EB40900993D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CF76223210EB40900993D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CF76225210EB40900993D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31BFBC0AF19807B073D389C2 /* Pods-InTime.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CF76226210EB40900993D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17625B83E2CC506D85AE522E /* Pods-InTime.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CF76228210EB40900993D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B83B0A237DCEF9FB7555E1A /* Pods-InTimeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InTime.app/InTime";
+			};
+			name = Debug;
+		};
+		5CF76229210EB40900993D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5704B685DB7CADC695BE700D /* Pods-InTimeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InTimeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTimeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InTime.app/InTime";
+			};
+			name = Release;
+		};
+		5CF7622B210EB40900993D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93686DCD757E4B36CA6EC47D /* Pods-InTimeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InTime;
+			};
+			name = Debug;
+		};
+		5CF7622C210EB40900993D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D25AFF26AF352B201D13FB /* Pods-InTimeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InTimeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTimeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InTime;
+			};
+			name = Release;
+		};
+		5CF76276210EBFD700993D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "InTimeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		5CF76277210EBFD700993D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "InTimeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		5CF7627A210EBFD700993D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = InTimeWatch_Extension;
+				INFOPLIST_FILE = InTimeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		5CF7627B210EBFD700993D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = InTimeWatch_Extension;
+				INFOPLIST_FILE = InTimeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.codef.InTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CF761F7210EB40800993D61 /* Build configuration list for PBXProject "InTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF76222210EB40900993D61 /* Debug */,
+				5CF76223210EB40900993D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF76224210EB40900993D61 /* Build configuration list for PBXNativeTarget "InTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF76225210EB40900993D61 /* Debug */,
+				5CF76226210EB40900993D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF76227210EB40900993D61 /* Build configuration list for PBXNativeTarget "InTimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF76228210EB40900993D61 /* Debug */,
+				5CF76229210EB40900993D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF7622A210EB40900993D61 /* Build configuration list for PBXNativeTarget "InTimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF7622B210EB40900993D61 /* Debug */,
+				5CF7622C210EB40900993D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF76275210EBFD700993D61 /* Build configuration list for PBXNativeTarget "InTimeWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF76276210EBFD700993D61 /* Debug */,
+				5CF76277210EBFD700993D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CF76279210EBFD700993D61 /* Build configuration list for PBXNativeTarget "InTimeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CF7627A210EBFD700993D61 /* Debug */,
+				5CF7627B210EBFD700993D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CF761F4210EB40800993D61 /* Project object */;
+}
