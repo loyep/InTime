@@ -12,45 +12,55 @@ class InTimeViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
-    private lazy var timer: DispatchSourceTimer = {
-        let t = DispatchSource.makeTimerSource()
-        t.schedule(deadline: .now(), repeating: 1)
-        t.setEventHandler(handler: {
-            self.eventHandler()
-        })
+    private var endYearDate: Date = Date()
+    
+    private var startYearDate: Date = Date()
+    
+    private let calendar = Calendar.current
+    
+    private let calendarComponent: DateComponents = {
+        var c = DateComponents()
+        c.year = 1
+        c.second = 1
+        return c
+    }()
+    
+    private lazy var timer: Timer = {
+        let t = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(InTimeViewController.eventHandler), userInfo: nil, repeats: true)
         return t
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer.resume()
+        let date = Date()
+        var timeInterval = date.timeIntervalSinceReferenceDate
+        timeInterval = ceil(timeInterval)
+        let fireDate = Date(timeIntervalSinceReferenceDate: timeInterval)
+        timer.fireDate = fireDate
     }
     
-    func eventHandler() {
-        let nowDate = Date()
-        let calendar = Calendar.current
+    func getEndYearDate(_ nowDate: Date) -> Date {
+        let startDate = calendar.date(from: calendar.dateComponents(Set<Calendar.Component>([.year]), from: nowDate))!
         
-        let startDate = calendar.date(from: calendar.dateComponents(Set<Calendar.Component>([.year]), from: nowDate))
-        var components = DateComponents()
-        components.year = 1
-        components.second = -1
-        let endDate = calendar.date(byAdding: components, to: startDate!)!
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy·MM·dd·HH·mm·ss"
-        components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: nowDate, to: endDate)
+        if startDate != startYearDate {
+            startYearDate = startDate
+            endYearDate = calendar.date(byAdding: calendarComponent, to: startDate)!
+        }
+        return endYearDate
+    }
+    
+    @objc func eventHandler() {
+        let nowDate = Date()
+
+        let endDate = getEndYearDate(nowDate)
+        
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: nowDate, to: endDate)
         let format = String(format: "%04d·%02d·%02d·%02d·%02d·%02d", components.year!, components.month!, components.day!, components.hour!, components.minute!, components.second!)
-        print("\(format)")
-//        print("\(components.year!)·\(components.month!)·\(components.day!)·\(components.hour!)·\(components.minute!)·\(components.second!)")
+        
         DispatchQueue.main.async {
             self.timeLabel.text = format
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

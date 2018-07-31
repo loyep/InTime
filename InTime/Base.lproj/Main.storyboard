@@ -44,10 +44,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VdO-xa-jbR" firstAttribute="centerY" secondItem="ZFf-EB-Qsc" secondAttribute="centerY" id="3Hv-9A-oSI"/>
-                            <constraint firstItem="VdO-xa-jbR" firstAttribute="leading" secondItem="ZFf-EB-Qsc" secondAttribute="leading" constant="16" id="5oj-0l-Urr"/>
-                            <constraint firstItem="VdO-xa-jbR" firstAttribute="centerX" secondItem="ZFf-EB-Qsc" secondAttribute="centerX" id="RAR-R3-fWI"/>
-                            <constraint firstItem="ZFf-EB-Qsc" firstAttribute="trailing" secondItem="VdO-xa-jbR" secondAttribute="trailing" constant="16" id="uAs-EI-AT3"/>
+                            <constraint firstItem="VdO-xa-jbR" firstAttribute="centerY" secondItem="pgG-Xx-2kJ" secondAttribute="centerY" id="3Hv-9A-oSI"/>
+                            <constraint firstItem="VdO-xa-jbR" firstAttribute="leading" secondItem="pgG-Xx-2kJ" secondAttribute="leading" constant="16" id="5oj-0l-Urr"/>
+                            <constraint firstItem="VdO-xa-jbR" firstAttribute="centerX" secondItem="pgG-Xx-2kJ" secondAttribute="centerX" id="RAR-R3-fWI"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VdO-xa-jbR" secondAttribute="trailing" id="uAs-EI-AT3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZFf-EB-Qsc"/>
                     </view>
