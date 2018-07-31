@@ -12,11 +12,22 @@ class InTimeViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
+    @IBOutlet weak var yearLabel: UILabel!
+
     private var endYearDate: Date = Date()
     
     private var startYearDate: Date = Date()
     
     private let calendar = Calendar.current
+    
+    private var yearTimeLong: TimeInterval = 0
+    
+    private let numberFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .percent
+        numberFormatter.minimumFractionDigits = 8
+        return numberFormatter
+    }()
     
     private let calendarComponent: DateComponents = {
         var c = DateComponents()
@@ -40,11 +51,16 @@ class InTimeViewController: UIViewController {
     }
     
     func getEndYearDate(_ nowDate: Date) -> Date {
-        let startDate = calendar.date(from: calendar.dateComponents(Set<Calendar.Component>([.year]), from: nowDate))!
+        let component = calendar.dateComponents(Set<Calendar.Component>([.year]), from: nowDate)
+        let startDate = calendar.date(from: component)!
         
         if startDate != startYearDate {
             startYearDate = startDate
             endYearDate = calendar.date(byAdding: calendarComponent, to: startDate)!
+            
+            yearTimeLong = endYearDate.timeIntervalSince(startYearDate)
+
+            yearLabel.text = "\(component.year!) 年已过去"
         }
         return endYearDate
     }
@@ -54,11 +70,20 @@ class InTimeViewController: UIViewController {
 
         let endDate = getEndYearDate(nowDate)
         
-        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: nowDate, to: endDate)
-        let format = String(format: "%04d·%02d·%02d·%02d·%02d·%02d", components.year!, components.month!, components.day!, components.hour!, components.minute!, components.second!)
+//        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: nowDate, to: endDate)
+//        let format = String(format: "%04d·%02d·%02d·%02d·%02d·%02d", components.year!, components.month!, components.day!, components.hour!, components.minute!, components.second!)
+        
+        var percent = NSDecimalNumber(value: Double(nowDate.timeIntervalSince(startYearDate)))
+        
+        percent = percent.dividing(by: NSDecimalNumber(value: Double(yearTimeLong)), withBehavior: NSDecimalNumberHandler(roundingMode: .plain, scale: 10, raiseOnExactness: false, raiseOnOverflow: false, raiseOnUnderflow: false, raiseOnDivideByZero: false))
+        
+        print("\(percent.stringValue)")
+        
+        let format = numberFormatter.string(from: percent)
         
         DispatchQueue.main.async {
             self.timeLabel.text = format
+//            self.timeLabel.text = percent
         }
     }
 

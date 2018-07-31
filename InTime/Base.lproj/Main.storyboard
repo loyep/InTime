@@ -35,25 +35,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdO-xa-jbR">
-                                <rect key="frame" x="16" y="282" width="343" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h59-cD-Qim">
+                                <rect key="frame" x="0.0" y="247.5" width="375" height="107"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdO-xa-jbR">
+                                        <rect key="frame" x="0.0" y="68.5" width="375" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxx 年已过去" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWp-4g-CWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="GWp-4g-CWb" firstAttribute="trailing" secondItem="h59-cD-Qim" secondAttribute="trailing" id="4CU-db-KjD"/>
+                                    <constraint firstAttribute="bottom" secondItem="VdO-xa-jbR" secondAttribute="bottom" id="6eG-Lg-uH3"/>
+                                    <constraint firstItem="VdO-xa-jbR" firstAttribute="top" secondItem="GWp-4g-CWb" secondAttribute="bottom" constant="30" id="G2x-RI-IEB"/>
+                                    <constraint firstItem="GWp-4g-CWb" firstAttribute="leading" secondItem="h59-cD-Qim" secondAttribute="leading" id="Vb6-p1-0gX"/>
+                                    <constraint firstItem="GWp-4g-CWb" firstAttribute="top" secondItem="h59-cD-Qim" secondAttribute="top" id="W55-GU-zUb"/>
+                                    <constraint firstAttribute="trailing" secondItem="VdO-xa-jbR" secondAttribute="trailing" id="rAX-c7-2hB"/>
+                                    <constraint firstItem="VdO-xa-jbR" firstAttribute="leading" secondItem="h59-cD-Qim" secondAttribute="leading" id="zMS-VY-mdJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="VdO-xa-jbR" firstAttribute="centerY" secondItem="pgG-Xx-2kJ" secondAttribute="centerY" id="3Hv-9A-oSI"/>
-                            <constraint firstItem="VdO-xa-jbR" firstAttribute="leading" secondItem="pgG-Xx-2kJ" secondAttribute="leading" constant="16" id="5oj-0l-Urr"/>
-                            <constraint firstItem="VdO-xa-jbR" firstAttribute="centerX" secondItem="pgG-Xx-2kJ" secondAttribute="centerX" id="RAR-R3-fWI"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VdO-xa-jbR" secondAttribute="trailing" id="uAs-EI-AT3"/>
+                            <constraint firstItem="h59-cD-Qim" firstAttribute="centerY" secondItem="pgG-Xx-2kJ" secondAttribute="centerY" id="Hn3-hV-jKK"/>
+                            <constraint firstItem="h59-cD-Qim" firstAttribute="trailing" secondItem="pgG-Xx-2kJ" secondAttribute="trailing" id="IPZ-Kt-3IP"/>
+                            <constraint firstItem="h59-cD-Qim" firstAttribute="leading" secondItem="pgG-Xx-2kJ" secondAttribute="leading" id="nj5-y6-FS9"/>
+                            <constraint firstItem="h59-cD-Qim" firstAttribute="centerX" secondItem="pgG-Xx-2kJ" secondAttribute="centerX" id="xlc-p3-hZU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZFf-EB-Qsc"/>
                     </view>
                     <navigationItem key="navigationItem" id="oXC-4m-AHv"/>
                     <connections>
                         <outlet property="timeLabel" destination="VdO-xa-jbR" id="CUB-RG-cUn"/>
+                        <outlet property="yearLabel" destination="GWp-4g-CWb" id="FBA-Cf-fFn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZBw-E0-YGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
